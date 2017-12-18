@@ -20,11 +20,6 @@ export default [
         component: About,
         name: 'About',
       },
-    ],
-  },
-  {
-    component: LayoutSidebar,
-    routes: [
       { path: '/tacos',
         component: Tacos,
         routes: [
@@ -36,9 +31,28 @@ export default [
           }
         ]
       },
-      {
-        component: Missed,
-      },
     ],
+    {
+      component: Missed,
+    },
   },
 ]
+
+
+// {
+//   component: LayoutSidebar,
+//   routes: [
+//     { path: '/tacos',
+//       component: Tacos,
+//       routes: [
+//         { path: '/tacos/chicken',
+//           component: Chicken,
+//         },
+//         { path: '/tacos/veggie',
+//           component: Veggie,
+//         }
+//       ]
+//     },
+//
+//   ],
+// },
